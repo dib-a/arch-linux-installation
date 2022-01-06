@@ -17,9 +17,9 @@ mkdir /mnt/boot/efi
 mount -L EFI /mnt/boot/efi
 swapon -L SWAP
 
-pacstrap /mnt base base-devel linu linux-firmware dhcpcd grub mkinitcpio efibootmgr git vim sudo
+pacstrap /mnt base base-devel linux linux-firmware dhcpcd grub mkinitcpio efibootmgr git vim sudo
 
 # for wifi uncomment the command below
 # pacstrap /mnt base base-devel linu linux-firmware dhcpcd grub mkinitcpio efibootmgr git vim sudo wpa_supplicant dialog
 
-manjaro-chroot /mnt
+arch-chroot /mnt
