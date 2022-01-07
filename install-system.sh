@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pacman -Syyu
 systemctl enable --now systemd-timesyncd
 
 cfdisk /dev/sda
