@@ -2,7 +2,7 @@
 
 You have to ```clone the repository``` and run ```bash ```install-system.sh or do it yourself as explained bellow:
 
-1. Update the system and the time:
+1. Update the time:
 
 ```bash
 systemctl enable --now systemd-timesyncd
