@@ -1,7 +1,6 @@
 #!/bin/bash
 
 pacman -Syyu
-systemctl enable --now systemd-timesyncd
 
 cfdisk /dev/sda
 mkfs.vfat -F 32 -n EFI /dev/sda1
