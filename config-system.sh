@@ -13,7 +13,6 @@ passwd
 cp src/sudoers /etc/sudoers
 
 systemctl enable dhcpcd
-systemctl enable systemd-timesyncd
 
 #vim /etc/mkinitcpio.conf
 cp src/mkinitcpio.conf /etc/mkinitcpio.conf
