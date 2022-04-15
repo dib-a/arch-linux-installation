@@ -21,3 +21,6 @@ pacstrap /mnt base base-devel linux linux-firmware dhcpcd grub mkinitcpio efiboo
 # pacstrap /mnt base base-devel linu linux-firmware dhcpcd grub mkinitcpio efibootmgr git vim sudo wpa_supplicant dialog
 
 arch-chroot /mnt
+
+umount -R /mnt
+cryptsetup close SYSTEM
