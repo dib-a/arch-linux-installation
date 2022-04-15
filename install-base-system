@@ -1,7 +1,7 @@
 #!/bin/bash
 fdisk /dev/sda
 
-cryptsetup -v -y --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat /dev/sda3
+cryptsetup -v -y --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat /dev/sda4
 cryptsetup open /dev/sda4 SYSTEM
 
 pvcreate /dev/mapper/SYSTEM
