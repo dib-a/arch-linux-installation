@@ -49,8 +49,8 @@
 #ar_JO ISO-8859-6  
 #ar_KW.UTF-8 UTF-8  
 #ar_KW ISO-8859-6  
-#ar_LB.UTF-8 UTF-8  
-#ar_LB ISO-8859-6  
+ar_LB.UTF-8 UTF-8  
+ar_LB ISO-8859-6  
 #ar_LY.UTF-8 UTF-8  
 #ar_LY ISO-8859-6  
 #ar_MA.UTF-8 UTF-8  
@@ -130,8 +130,8 @@
 #de_BE@euro ISO-8859-15  
 #de_CH.UTF-8 UTF-8  
 #de_CH ISO-8859-1  
-#de_DE.UTF-8 UTF-8  
-#de_DE ISO-8859-1  
+de_DE.UTF-8 UTF-8  
+de_DE ISO-8859-1  
 #de_DE@euro ISO-8859-15  
 #de_IT.UTF-8 UTF-8  
 #de_IT ISO-8859-1  
