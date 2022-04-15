@@ -15,17 +15,17 @@ In this example it will be:
 |-------|----|------------------|
 |/dev/sda1|300 MB|EFI| 
 |/dev/sda2|300 MB|BOOT|
-|/dev/sda3|all left|SYSTEM|
-|/dev/sda4|8 GB| SWAP
+|/dev/sda3|8   GB|SWAP|
+|/dev/sda4|all left|SYSTEM
 
 Make the file system and crypt the ```SYSTEM```:
 ```bash
 mkfs.vfat -F 32 -n EFI /dev/sda1
 mkfs.ext4 -L BOOT /dev/sda2
-mkswap -L SWAP /dev/sda4
+mkswap -L SWAP /dev/sda3
 
-cryptsetup -v -y --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat /dev/sda3
-cryptsetup open /dev/sda3 SYSTEM
+cryptsetup -v -y --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat /dev/sda4
+cryptsetup open /dev/sda4 SYSTEM
 
 mkfs.ext4 -L SYSTEM /dev/mapper/SYSTEM
 ```
